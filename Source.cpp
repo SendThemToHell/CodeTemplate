@@ -72,7 +72,6 @@ typedef double ld;
 #ifdef LOCAL
 mt19937 rd(57322);
 #else
-//mt19937 rd(57322);
 mt19937 rd((uint)chrono::steady_clock::now().time_since_epoch().count());
 #endif
 /*------CommentInInteractive--------*/
@@ -151,16 +150,9 @@ signed main() {
 
 
 	//int tst = 1;
-	//srand(time(NULL));
 	//cin >> tst;
-	//scanf("%d", &tst);
 	//while (tst-- > 0) {
-	//while (true)
 	solve();
-	//if ((tst & 0xF) == 0) {
-	//cerr << "ok\n";
-	//}
-	//cerr << "/*-----------------*/\n";
 	//}
 
 #ifdef LOCAL
